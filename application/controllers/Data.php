@@ -42,7 +42,7 @@ class Data extends CI_Controller {
 		$this->data['title_web'] = 'Data Tenant Detail';
         $this->load->view('header_view',$this->data);
         $this->load->view('sidebar_view',$this->data);
-        $this->load->view('./tenant/detail',$this->data);
+        $this->load->view('tenant/detail',$this->data);
         $this->load->view('footer_view',$this->data);
 	}
 

@@ -1,6 +1,6 @@
 # Framework
 
-<b>created Irhash & Rachmat</b>
+<b>created Irhash dan Rachmat</b>
 * Codeigniter 3.1.11
 * Template Admin LTE  Versi 2.4
 

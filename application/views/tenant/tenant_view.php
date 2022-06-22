@@ -34,7 +34,6 @@
                                 <th>Penerbit</th>
                                 <th>Tahun tenant</th>
                                 <th>Stok tenant</th>
-                                <th>Dipinjam</th>
                                 <th>Tanggal Masuk</th>
                                 <th>Aksi</th>
                             </tr>
@@ -60,18 +59,6 @@
                                 <td><?= $isi['penerbit'];?></td>
                                 <td><?= $isi['thn_tenant'];?></td>
                                 <td><?= $isi['jml'];?></td>
-								<td>
-									<?php
-										$id = $isi['tenant_id'];
-										$dd = $this->db->query("SELECT * FROM tbl_pinjam WHERE tenant_id= '$id' AND status = 'Dipinjam'");
-										if($dd->num_rows() > 0 )
-										{
-											echo $dd->num_rows();
-										}else{
-											echo '0';
-										}
-									?>
-								</td>
                                 <td><?= $isi['tgl_masuk'];?></td>
 									<td <?php if($this->session->userdata('level') == 'Petugas'){?>style="width:17%;"<?php }?>>
 								

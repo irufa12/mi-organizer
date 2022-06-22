@@ -81,41 +81,6 @@
                     </li>
                 </ul>
             </li>
-            <li class="treeview 
-                <?php if($this->uri->uri_string() == 'transaksi'){ echo 'active';}?>
-                <?php if($this->uri->uri_string() == 'transaksi/kembali'){ echo 'active';}?>
-                <?php if($this->uri->uri_string() == 'transaksi/pinjam'){ echo 'active';}?>
-                <?php if($this->uri->uri_string() == 'transaksi/detailpinjam/'.$this->uri->segment('3')){ echo 'active';}?>
-                <?php if($this->uri->uri_string() == 'transaksi/kembalipinjam/'.$this->uri->segment('3')){ echo 'active';}?>">
-                <a href="#">
-                    <i class="fa fa-exchange"></i>
-                    <span>Transaksi</span>
-                    <span class="pull-right-container">
-                    <i class="fa fa-angle-left pull-right"></i>
-                    </span>
-                </a>
-                <ul class="treeview-menu">
-                    <li class="<?php if($this->uri->uri_string() == 'transaksi'){ echo 'active';}?>
-                        <?php if($this->uri->uri_string() == 'transaksi/pinjam'){ echo 'active';}?>
-                        <?php if($this->uri->uri_string() == 'transaksi/kembalipinjam/'.$this->uri->segment('3')){ echo 'active';}?>">
-                        <a href="<?php echo base_url("transaksi");?>" class="cursor">
-                            <span class="fa fa-upload"></span> Peminjaman
-                            
-                        </a>
-                    </li>
-                    <li class="<?php if($this->uri->uri_string() == 'transaksi/kembali'){ echo 'active';}?>">
-                        <a href="<?php echo base_url("transaksi/kembali");?>" class="cursor">
-                            <span class="fa fa-download"></span> Pengembalian
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li class="<?php if($this->uri->uri_string() == 'transaksi/denda'){ echo 'active';}?>">
-                <a href="<?php echo base_url("transaksi/denda");?>" class="cursor">
-                    <i class="fa fa-money"></i> <span>Denda</span>
-                    
-                </a>
-            </li>
 			<?php }?>
 			<?php if($this->session->userdata('level') == 'Anggota'){?>
 				<li class="<?php if($this->uri->uri_string() == 'transaksi'){ echo 'active';}?>">

@@ -80,23 +80,10 @@
 									<i class="fa fa-sign-in"></i> Detail Pinjam</a>
 							</td>
 						</tr>
-						<!-- <tr>
-							<td>Keterangan Lainnya</td>
-							<td><?= $tenant->isi;?></td>
-						</tr> -->
 						<tr>
 							<td>Lokasi</td>
 							<td><?= $lokasi->nama_lokasi;?></td>
 						</tr>
-						<!-- <tr>
-							<td>Lampiran</td>
-							<td><?php if(!empty($tenant->lampiran !== "0")){?>
-									<a href="<?= base_url('assets_style/image/tenant/'.$tenant->lampiran);?>" class="btn btn-primary btn-md" target="_blank">
-										<i class="fa fa-download"></i> Sample tenant
-									</a>
-								<?php  }else{ echo '<br/><p style="color:red">* Tidak ada Lampiran</p>';}?>
-                               </td>
-						</tr> -->
 						<tr>
 							<td>Tanggal Masuk</td>
 							<td><?= $tenant->tgl_masuk;?></td>

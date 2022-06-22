@@ -148,7 +148,7 @@ class Data extends CI_Controller {
 				$this->load->library('upload',$config);
 				$this->upload->initialize($config);
 
-				if ($this->upload->do_upload('gambar')) {
+				if (!$this->upload->do_upload('gambar')) {
 					$this->upload->data();
 					$file1 = array('upload_data' => $this->upload->data());
 					$this->db->set('logo', $file1['upload_data']['file_name']);

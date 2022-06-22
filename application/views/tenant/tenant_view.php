@@ -29,7 +29,7 @@
                             <tr>
                                 <th>No</th>
                                 <th>logo</th>
-                                <!-- <th>ISBN</th> -->
+                                <!-- <th>no_tlp</th> -->
                                 <th>Nama Tenant</th>
                                 <th>Penerbit</th>
                                 <th>Tahun tenant</th>
@@ -55,7 +55,7 @@
                                         <?php }?>
                                     </center>
                                 </td>
-                                <!-- <td><?= $isi['isbn'];?></td> -->
+                                <!-- <td><?= $isi['no_tlp'];?></td> -->
                                 <td><?= $isi['nama_tenant'];?></td>
                                 <td><?= $isi['penerbit'];?></td>
                                 <td><?= $isi['thn_tenant'];?></td>

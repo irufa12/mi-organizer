@@ -408,7 +408,7 @@ class Transaksi extends CI_Controller {
 				'qty'     => 1,
                 'price'   => '1000',
 				'name'    => $tes->title,
-				'options' => array('isbn' => $tes->isbn,'thn' => $tes->thn_tenant,'penerbit' => $tes->penerbit)
+				'options' => array('no_tlp' => $tes->no_tlp,'thn' => $tes->thn_tenant,'penerbit' => $tes->penerbit)
 			);
 			if(!$this->session->has_userdata('cart')) {
 				$cart = array($item);

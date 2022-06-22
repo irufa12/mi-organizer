@@ -27,8 +27,8 @@
 			    <div class="box-body">
 					<table class="table table-striped table-bordered">
 						<tr>
-							<td style="width:20%">ISBN</td>
-							<td><?= $tenant->isbn;?></td>
+							<td style="width:20%">no_tlp</td>
+							<td><?= $tenant->no_tlp;?></td>
 						</tr>
 						<tr>
 							<td>Logo tenant</td>
@@ -80,15 +80,15 @@
 									<i class="fa fa-sign-in"></i> Detail Pinjam</a>
 							</td>
 						</tr>
-						<tr>
+						<!-- <tr>
 							<td>Keterangan Lainnya</td>
 							<td><?= $tenant->isi;?></td>
-						</tr>
+						</tr> -->
 						<tr>
 							<td>Lokasi</td>
 							<td><?= $lokasi->nama_lokasi;?></td>
 						</tr>
-						<tr>
+						<!-- <tr>
 							<td>Lampiran</td>
 							<td><?php if(!empty($tenant->lampiran !== "0")){?>
 									<a href="<?= base_url('assets_style/image/tenant/'.$tenant->lampiran);?>" class="btn btn-primary btn-md" target="_blank">
@@ -96,7 +96,7 @@
 									</a>
 								<?php  }else{ echo '<br/><p style="color:red">* Tidak ada Lampiran</p>';}?>
                                </td>
-						</tr>
+						</tr> -->
 						<tr>
 							<td>Tanggal Masuk</td>
 							<td><?= $tenant->tgl_masuk;?></td>

@@ -39,8 +39,8 @@
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label>ISBN</label>
-                                    <input type="text" class="form-control" value="<?= $tenant->isbn;?>" name="isbn"  placeholder="Contoh ISBN : 978-602-8123-35-8">
+                                    <label>no_tlp</label>
+                                    <input type="text" class="form-control" value="<?= $tenant->no_tlp;?>" name="no_tlp"  placeholder="Contoh no_tlp : 978-602-8123-35-8">
                                 </div>
                                 <div class="form-group">
                                     <label>Judul tenant</label>

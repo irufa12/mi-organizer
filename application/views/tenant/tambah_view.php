@@ -30,7 +30,7 @@
 									</select>
 								</div>
                                 <div class="form-group">
-                                    <label>lokasi</label>
+                                    <label>Lokasi</label>
                                     <select name="lokasi" class="form-control select2" required="required">
 										<option disabled selected value> -- Pilih lokasi -- </option>
 										<?php foreach($lokasitenant as $isi){?>
@@ -39,8 +39,8 @@
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label>ISBN</label>
-                                    <input type="text" class="form-control" name="isbn"  placeholder="Contoh ISBN : 978-602-8123-35-8">
+                                    <label>No Telephone</label>
+                                    <input type="text" class="form-control" name="no_tlp"  placeholder="Contoh no_tlp : 08123456789">
                                 </div>
                                 <div class="form-group">
                                     <label>Judul tenant</label>
@@ -69,14 +69,14 @@
                                     <label>Logo tenant <small style="color:green">(gambar) * opsional</small></label>
                                     <input type="file" accept="image/*" name="gambar">
                                 </div>
-                                <div class="form-group">
+                                <!-- <div class="form-group">
                                     <label>Lampiran tenant <small style="color:green">(pdf) * opsional</small></label>
                                     <input type="file" accept="application/pdf" name="lampiran">
-                                </div>
-                                <div class="form-group">
+                                </div> -->
+                                <!-- <div class="form-group">
                                     <label>Keterangan Lainnya</label>
                                     <textarea class="form-control" name="ket" id="summernotehal" style="height:120px"></textarea>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <div class="pull-right">

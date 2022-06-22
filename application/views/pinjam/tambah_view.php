@@ -122,7 +122,7 @@
 		<thead>
 			<tr>
 				<th>No</th>
-				<th>ISBN</th>
+				<th>no_tlp</th>
 				<th>Title</th>
 				<th>Penerbit</th>
 				<th>Tahun tenant</th>
@@ -135,7 +135,7 @@
 		<?php $no=1;foreach($tenant->result_array() as $isi){?>
 			<tr>
 				<td><?= $no;?></td>
-				<td><?= $isi['isbn'];?></td>
+				<td><?= $isi['no_tlp'];?></td>
 				<td><?= $isi['title'];?></td>
 				<td><?= $isi['penerbit'];?></td>
 				<td><?= $isi['thn_tenant'];?></td>

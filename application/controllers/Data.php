@@ -127,7 +127,7 @@ class Data extends CI_Controller {
 				'tenant_id'=>$tenant_id,
 				'id_kategori'=>htmlentities($post['kategori']), 
 				'id_lokasi' => htmlentities($post['lokasi']), 
-				'isbn' => htmlentities($post['isbn']), 
+				'no_tlp' => htmlentities($post['no_tlp']), 
 				'title'  => htmlentities($post['title']), 
 				'pengarang'=> htmlentities($post['pengarang']), 
 				'penerbit'=> htmlentities($post['penerbit']),    
@@ -137,7 +137,7 @@ class Data extends CI_Controller {
 				'tgl_masuk' => date('Y-m-d H:i:s')
 			);
 
-			$this->load->library('upload',$config);
+			$this->load->library('upload');
 			if(!empty($_FILES['gambar']['name']))
 			{
 				// setting konfigurasi upload
@@ -148,7 +148,7 @@ class Data extends CI_Controller {
 				$this->load->library('upload',$config);
 				$this->upload->initialize($config);
 
-				if (!$this->upload->do_upload('gambar')) {
+				if ($this->upload->do_upload('gambar')) {
 					$this->upload->data();
 					$file1 = array('upload_data' => $this->upload->data());
 					$this->db->set('logo', $file1['upload_data']['file_name']);
@@ -183,7 +183,7 @@ class Data extends CI_Controller {
 				}
 			}
 
-			$this->db->insert('tbl_tenant', $data);
+			$this->db->inser('tbl_tenant', $data);
 
 			$this->session->set_flashdata('pesan','<div id="notifikasi"><div class="alert alert-success">
 			<p> Tambah tenant Sukses !</p>
@@ -198,7 +198,7 @@ class Data extends CI_Controller {
 			$data = array(
 				'id_kategori'=>htmlentities($post['kategori']), 
 				'id_lokasi' => htmlentities($post['lokasi']), 
-				'isbn' => htmlentities($post['isbn']), 
+				'no_tlp' => htmlentities($post['no_tlp']), 
 				'title'  => htmlentities($post['title']),
 				'pengarang'=> htmlentities($post['pengarang']), 
 				'penerbit'=> htmlentities($post['penerbit']),  

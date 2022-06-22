@@ -172,7 +172,7 @@ CREATE TABLE `tbl_tenant` (
   `id_kategori` int(11) NOT NULL,
   `id_selasar` int(11) NOT NULL,
   `logo` varchar(255) DEFAULT NULL,
-  `isbn` varchar(255) DEFAULT NULL,
+  `no_tlp` varchar(255) DEFAULT NULL,
   `lampiran` varchar(255) DEFAULT NULL,
   `nama_tenant` varchar(255) DEFAULT NULL,
   `penerbit` varchar(255) DEFAULT NULL,
@@ -187,7 +187,7 @@ CREATE TABLE `tbl_tenant` (
 -- Dumping data for table `tbl_tenant`
 --
 
-INSERT INTO `tbl_tenant` (`id_tenant`, `tenant_id`, `id_kategori`, `id_selasar`, `logo`, `isbn`, `lampiran`, `nama_tenant`, `penerbit`, `pengarang`, `thn_tenant`, `isi`, `jml`, `tgl_masuk`) VALUES
+INSERT INTO `tbl_tenant` (`id_tenant`, `tenant_id`, `id_kategori`, `id_selasar`, `logo`, `no_tlp`, `lampiran`, `nama_tenant`, `penerbit`, `pengarang`, `thn_tenant`, `isi`, `jml`, `tgl_masuk`) VALUES
 (8, 'BK008', 2, 1, '0', '132-123-234-231', '0', 'CARA MUDAH BELAJAR PEMROGRAMAN C++', 'INFORMATIKA BANDUNG', 'BUDI RAHARJO ', '2012', '<table class=\"table table-bordered\" style=\"background-color: rgb(255, 255, 255); width: 653px; color: rgb(51, 51, 51);\"><tbody><tr><td style=\"padding: 8px; line-height: 1.42857; border-color: rgb(244, 244, 244);\">Tipe Buku</td><td style=\"padding: 8px; line-height: 1.42857; border-color: rgb(244, 244, 244);\">Kertas</td></tr><tr><td style=\"padding: 8px; line-height: 1.42857; border-color: rgb(244, 244, 244);\">Bahasa</td><td style=\"padding: 8px; line-height: 1.42857; border-color: rgb(244, 244, 244);\">Indonesia</td></tr></tbody></table>', 23, '2019-11-23 11:49:57');
 
 --

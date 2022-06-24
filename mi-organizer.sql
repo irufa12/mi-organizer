@@ -98,7 +98,7 @@ CREATE TABLE `tbl_login` (
   `nama` varchar(255) NOT NULL,
   `tempat_lahir` varchar(255) NOT NULL,
   `tgl_lahir` varchar(255) NOT NULL,
-  `jenkel` varchar(255) NOT NULL,
+  `gender` varchar(255) NOT NULL,
   `alamat` text NOT NULL,
   `telepon` varchar(25) NOT NULL,
   `email` varchar(255) NOT NULL,
@@ -110,7 +110,7 @@ CREATE TABLE `tbl_login` (
 -- Dumping data for table `tbl_login`
 --
 
-INSERT INTO `tbl_login` (`id_login`, `anggota_id`, `user`, `pass`, `level`, `nama`, `tempat_lahir`, `tgl_lahir`, `jenkel`, `alamat`, `telepon`, `email`, `tgl_bergabung`, `foto`) VALUES
+INSERT INTO `tbl_login` (`id_login`, `anggota_id`, `user`, `pass`, `level`, `nama`, `tempat_lahir`, `tgl_lahir`, `gender`, `alamat`, `telepon`, `email`, `tgl_bergabung`, `foto`) VALUES
 (4, 'AG003', 'irhash', '3b607996d6f72bf43c3001a9024e1272', 'Petugas', 'irhash', 'Bekasi', '1999-07-02', 'Laki-Laki', 'Vila Nusa Indah', '08833354642', 'muhammadirhash76@gmail.com', '2022-06-20', 'user_1655734004.JPG'),
 (5, 'AG005', 'fadhil.arf', '011ed3efca1c7928ecc5635be1023dda', 'Petugas', 'Fadhil Arif', 'Jakarta', '1998-04-10', 'Laki-Laki', 'pondok benda 12 ', '08231230098', 'fadhil.arief04@gmail.com', '2022-06-22', 'user_1655901541.JPG');
 

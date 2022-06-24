@@ -112,7 +112,7 @@
 			<th>No</th>
 			<th>ID</th>
 			<th>Nama</th>
-			<th>Jenkel</th>
+			<th>gender</th>
 			<th>Telepon</th>
 			<th>Tgl Pinjam</th>
 			<th>Lama Pinjam</th>
@@ -132,7 +132,7 @@
 			<td><?= $no;?></td>
 			<td><?= $isi->anggota_id;?></td>
 			<td><?= $isi->nama;?></td>
-			<td><?= $isi->jenkel;?></td>
+			<td><?= $isi->gender;?></td>
 			<td><?= $isi->telepon;?></td>
 			<td><?= $si['tgl_pinjam'];?></td>
 			<td><?= $si['lama_pinjam'];?> Hari</td>

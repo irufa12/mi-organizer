@@ -54,11 +54,11 @@
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label>Jenis Kelamin</label>
+                                    <label>Gender</label>
                                     <br/>
-                                    <input type="radio" name="jenkel" <?php if($user->jenkel == 'Laki-Laki'){ echo 'checked';}?> value="Laki-Laki" required="required"> Laki-Laki
+                                    <input type="radio" name="gender" <?php if($user->gender == 'Laki-Laki'){ echo 'checked';}?> value="Laki-Laki" required="required"> Laki-Laki
                                     <br/>
-                                    <input type="radio" name="jenkel" <?php if($user->jenkel == 'Perempuan'){ echo 'checked';}?> value="Perempuan" required="required"> Perempuan
+                                    <input type="radio" name="gender" <?php if($user->gender == 'Perempuan'){ echo 'checked';}?> value="Perempuan" required="required"> Perempuan
                                 </div>
                             </div>
                             <div class="col-sm-6">

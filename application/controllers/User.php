@@ -46,7 +46,7 @@ class User extends CI_Controller {
         $user = htmlentities($this->input->post('user',TRUE));
         $pass = md5(htmlentities($this->input->post('pass',TRUE)));
         $level = htmlentities($this->input->post('level',TRUE));
-        $jenkel = htmlentities($this->input->post('jenkel',TRUE));
+        $gender = htmlentities($this->input->post('gender',TRUE));
         $telepon = htmlentities($this->input->post('telepon',TRUE));
         $status = htmlentities($this->input->post('status',TRUE));
         $alamat = htmlentities($this->input->post('alamat',TRUE));
@@ -84,7 +84,7 @@ class User extends CI_Controller {
                 'email'=>$_POST['email'],
                 'telepon'=>$telepon,
                 'foto'=>$data1['upload_data']['file_name'],
-                'jenkel'=>$jenkel,
+                'gender'=>$gender,
                 'alamat'=>$alamat,
                 'tgl_bergabung'=>date('Y-m-d')
             );
@@ -160,7 +160,7 @@ class User extends CI_Controller {
         $user = htmlentities($this->input->post('user',TRUE));
         $pass = htmlentities($this->input->post('pass'));
         $level = htmlentities($this->input->post('level',TRUE));
-        $jenkel = htmlentities($this->input->post('jenkel',TRUE));
+        $gender = htmlentities($this->input->post('gender',TRUE));
         $telepon = htmlentities($this->input->post('telepon',TRUE));
         $status = htmlentities($this->input->post('status',TRUE));
         $alamat = htmlentities($this->input->post('alamat',TRUE));
@@ -188,7 +188,7 @@ class User extends CI_Controller {
 					'level'=>$level,
 					'email'=>$_POST['email'],
 					'telepon'=>$telepon,
-					'jenkel'=>$jenkel,
+					'gender'=>$gender,
 					'alamat'=>$alamat,
 				);
 				$this->M_Admin->update_table('tbl_login','id_login',$id_login,$data);
@@ -215,7 +215,7 @@ class User extends CI_Controller {
 					'level'=>$level,
 					'email'=>$_POST['email'],
 					'telepon'=>$telepon,
-					'jenkel'=>$jenkel,
+					'gender'=>$gender,
 					'alamat'=>$alamat,
 				);
 				$this->M_Admin->update_table('tbl_login','id_login',$id_login,$data);
@@ -252,7 +252,7 @@ class User extends CI_Controller {
 					'email'=>$_POST['email'],
 					'telepon'=>$telepon,
 					'foto'=>$data1['upload_data']['file_name'],
-					'jenkel'=>$jenkel,
+					'gender'=>$gender,
 					'alamat'=>$alamat
 				);
 				$this->M_Admin->update_table('tbl_login','id_login',$id_login,$data);
@@ -282,7 +282,7 @@ class User extends CI_Controller {
 					'email'=>$_POST['email'],
 					'telepon'=>$telepon,
 					'foto'=>$data1['upload_data']['file_name'],
-					'jenkel'=>$jenkel,
+					'gender'=>$gender,
 					'alamat'=>$alamat
 				);
 				$this->M_Admin->update_table('tbl_login','id_login',$id_login,$data);

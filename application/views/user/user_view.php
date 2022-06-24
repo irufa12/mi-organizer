@@ -30,7 +30,7 @@
                                 <th>Foto</th>
                                 <th>Nama</th>
                                 <th>User</th>
-                                <th>Jenkel</th>
+                                <th>Gender</th>
                                 <th>Telepon</th>
                                 <th>Level</th>
                                 <th>Alamat</th>
@@ -55,7 +55,7 @@
                                 </td>
                                 <td><?= $isi['nama'];?></td>
                                 <td><?= $isi['user'];?></td>
-                                <td><?= $isi['jenkel'];?></td>
+                                <td><?= $isi['gender'];?></td>
                                 <td><?= $isi['telepon'];?></td>
                                 <td><?= $isi['level'];?></td>
                                 <td><?= $isi['alamat'];?></td>

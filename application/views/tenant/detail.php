@@ -27,8 +27,8 @@
 			    <div class="box-body">
 					<table class="table table-striped table-bordered">
 						<tr>
-							<td style="width:20%">no_tlp</td>
-							<td><?= $tenant->no_tlp;?></td>
+							<td style="width:20%">No Telephone</td>
+							<td><?= $tenant->no_telephone;?></td>
 						</tr>
 						<tr>
 							<td>Logo tenant</td>
@@ -40,24 +40,16 @@
 								</td>
 						</tr>
 						<tr>
-							<td>Judul tenant</td>
+							<td>Nama Tenant</td>
 							<td><?= $tenant->nama_tenant;?></td>
 						</tr>
 						<tr>
-							<td>Kategori</td>
-							<td><?= $kat->nama_kategori;?></td>
+							<td>Perusahaan</td>
+							<td><?= $tenant->perusahaan;?></td>
 						</tr>
 						<tr>
-							<td>Penerbit</td>
-							<td><?= $tenant->penerbit;?></td>
-						</tr>
-						<tr>
-							<td>Pengarang</td>
-							<td><?= $tenant->pengarang;?></td>
-						</tr>
-						<tr>
-							<td>Tahun Terbit</td>
-							<td><?= $tenant->thn_tenant;?></td>
+							<td>Penanggung Jawab</td>
+							<td><?= $tenant->penanggung_jawab;?></td>
 						</tr>
 						<tr>
 							<td>Jumlah tenant</td>
@@ -80,10 +72,10 @@
 									<i class="fa fa-sign-in"></i> Detail Pinjam</a>
 							</td>
 						</tr>
-						<tr>
+						<!-- <tr>
 							<td>Lokasi</td>
 							<td><?= $lokasi->nama_lokasi;?></td>
-						</tr>
+						</tr> -->
 						<tr>
 							<td>Tanggal Masuk</td>
 							<td><?= $tenant->tgl_masuk;?></td>

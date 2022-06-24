@@ -40,19 +40,19 @@
                                 </div>
                                 <div class="form-group">
                                     <label>No Telephone</label>
-                                    <input type="text" class="form-control" name="no_tlp"  placeholder="Contoh no_tlp : 08123456789">
+                                    <input type="text" class="form-control" name="no_telephone"  placeholder="Contoh no_telephone : 08123456789">
                                 </div>
                                 <div class="form-group">
-                                    <label>Judul tenant</label>
-                                    <input type="text" class="form-control" name="title" placeholder="Contoh : Cara Cepat Belajar Pemrograman Web">
+                                    <label>Nama tenant</label>
+                                    <input type="text" class="form-control" name="title" placeholder="Contoh : Cap Tikus">
                                 </div>
                                 <div class="form-group">
-                                    <label>Nama Pengarang</label>
-                                    <input type="text" class="form-control" name="pengarang" placeholder="Nama Pengarang">
+                                    <label>Nama Penanggung Jawab</label>
+                                    <input type="text" class="form-control" name="penanggung_jawab" placeholder="Nama Penanggung Jawab">
                                 </div>
                                 <div class="form-group">
-                                    <label>Penerbit</label>
-                                    <input type="text" class="form-control" name="penerbit" placeholder="Nama Penerbit">
+                                    <label>Perusahaan</label>
+                                    <input type="text" class="form-control" name="perusahaan" placeholder="Nama Perusahaan">
                                 </div>
                                 <div class="form-group">
                                     <label>Tahun tenant</label>
@@ -69,14 +69,7 @@
                                     <label>Logo tenant <small style="color:green">(gambar) * opsional</small></label>
                                     <input type="file" accept="image/*" name="gambar">
                                 </div>
-                                <!-- <div class="form-group">
-                                    <label>Lampiran tenant <small style="color:green">(pdf) * opsional</small></label>
-                                    <input type="file" accept="application/pdf" name="lampiran">
-                                </div> -->
-                                <!-- <div class="form-group">
-                                    <label>Keterangan Lainnya</label>
-                                    <textarea class="form-control" name="ket" id="summernotehal" style="height:120px"></textarea>
-                                </div> -->
+                                
                             </div>
                         </div>
                         <div class="pull-right">

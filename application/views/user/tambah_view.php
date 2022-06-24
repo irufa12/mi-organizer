@@ -52,9 +52,9 @@
                                 <div class="form-group">
                                     <label>Jenis Kelamin</label>
                                     <br/>
-                                    <input type="radio" name="gender" value="Laki-Laki" required="required"> Laki-Laki
+                                    <input type="radio" name="jenkel" value="Laki-Laki" required="required"> Laki-Laki
                                     <br/>
-                                    <input type="radio" name="gender" value="Perempuan" required="required"> Perempuan
+                                    <input type="radio" name="jenkel" value="Perempuan" required="required"> Perempuan
                                 </div>
                                 <div class="form-group">
                                     <label>Telepon</label>

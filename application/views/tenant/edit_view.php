@@ -39,20 +39,20 @@
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label>No Telephone</label>
-                                    <input type="text" class="form-control" value="<?= $tenant->no_telephone;?>" name="no_telephone"  placeholder="Contoh no_telephone : 978-602-8123-35-8">
+                                    <label>no_tlp</label>
+                                    <input type="text" class="form-control" value="<?= $tenant->no_tlp;?>" name="no_tlp"  placeholder="Contoh no_tlp : 978-602-8123-35-8">
                                 </div>
                                 <div class="form-group">
-                                    <label>Nama tenant</label>
-                                    <input type="text" class="form-control" value="<?= $tenant->title;?>" name="title" placeholder="Contoh : Cap Tikus">
+                                    <label>Judul tenant</label>
+                                    <input type="text" class="form-control" value="<?= $tenant->title;?>" name="title" placeholder="Contoh : Cara Cepat Belajar Pemrograman Web">
                                 </div>
                                 <div class="form-group">
-                                    <label>Nama Penanggung Jawab</label>
-                                    <input type="text" class="form-control" value="<?= $tenant->penanggung_jawab;?>" name="penanggung_jawab" placeholder="Nama penanggung jawab">
+                                    <label>Nama Pengarang</label>
+                                    <input type="text" class="form-control" value="<?= $tenant->pengarang;?>" name="pengarang" placeholder="Nama Pengarang">
                                 </div>
                                 <div class="form-group">
-                                    <label>Perusahaan</label>
-                                    <input type="text" class="form-control" value="<?= $tenant->perusahaan;?>" name="perusahaan" placeholder="Nama perusahaan">
+                                    <label>Penerbit</label>
+                                    <input type="text" class="form-control" value="<?= $tenant->penerbit;?>" name="penerbit" placeholder="Nama Penerbit">
                                 </div>
                                 <div class="form-group">
                                     <label>Tahun tenant</label>
@@ -78,6 +78,16 @@
 									<?php }else{ echo '<br/><p style="color:red">* Tidak ada logo</p>';}?>
 								</div>
                                 <div class="form-group">
+								<label>Lampiran tenant <small style="color:green">(pdf) * ganti opsional</small></label>
+                                    <input type="file" accept="application/pdf" name="lampiran">
+                                    <br>
+									<?php if(!empty($tenant->lampiran !== "0")){?>
+									<a href="<?= base_url('assets_style/image/tenant/'.$tenant->lampiran);?>" class="btn btn-primary btn-md" target="_blank">
+										<i class="fa fa-download"></i> Sample tenant
+									</a>
+									<?php  }else{ echo '<br/><p style="color:red">* Tidak ada Lampiran</p>';}?>
+                                </div>
+                                <div class="form-group">
                                     <label>Keterangan Lainnya</label>
                                     <textarea class="form-control" name="ket" id="summernotehal" style="height:120px"><?= $tenant->isi;?></textarea>
                                 </div>
@@ -85,6 +95,7 @@
                         </div>
                         <div class="pull-right">
 							<input type="hidden" name="gmbr" value="<?= $tenant->logo;?>">
+							<input type="hidden" name="lamp" value="<?= $tenant->lampiran;?>">
 							<input type="hidden" name="edit" value="<?= $tenant->id_tenant;?>">
                             <button type="submit" class="btn btn-primary btn-md">Submit</button> 
                     </form>

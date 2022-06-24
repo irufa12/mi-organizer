@@ -98,7 +98,7 @@ CREATE TABLE `tbl_login` (
   `nama` varchar(255) NOT NULL,
   `tempat_lahir` varchar(255) NOT NULL,
   `tgl_lahir` varchar(255) NOT NULL,
-  `gender` varchar(255) NOT NULL,
+  `jenkel` varchar(255) NOT NULL,
   `alamat` text NOT NULL,
   `telepon` varchar(25) NOT NULL,
   `email` varchar(255) NOT NULL,
@@ -110,7 +110,7 @@ CREATE TABLE `tbl_login` (
 -- Dumping data for table `tbl_login`
 --
 
-INSERT INTO `tbl_login` (`id_login`, `anggota_id`, `user`, `pass`, `level`, `nama`, `tempat_lahir`, `tgl_lahir`, `gender`, `alamat`, `telepon`, `email`, `tgl_bergabung`, `foto`) VALUES
+INSERT INTO `tbl_login` (`id_login`, `anggota_id`, `user`, `pass`, `level`, `nama`, `tempat_lahir`, `tgl_lahir`, `jenkel`, `alamat`, `telepon`, `email`, `tgl_bergabung`, `foto`) VALUES
 (4, 'AG003', 'irhash', '3b607996d6f72bf43c3001a9024e1272', 'Petugas', 'irhash', 'Bekasi', '1999-07-02', 'Laki-Laki', 'Vila Nusa Indah', '08833354642', 'muhammadirhash76@gmail.com', '2022-06-20', 'user_1655734004.JPG'),
 (5, 'AG005', 'fadhil.arf', '011ed3efca1c7928ecc5635be1023dda', 'Petugas', 'Fadhil Arif', 'Jakarta', '1998-04-10', 'Laki-Laki', 'pondok benda 12 ', '08231230098', 'fadhil.arief04@gmail.com', '2022-06-22', 'user_1655901541.JPG');
 
@@ -171,11 +171,11 @@ CREATE TABLE `tbl_tenant` (
   `id_kategori` int(11) NOT NULL,
   `id_lokasi` int(11) NOT NULL,
   `logo` varchar(255) DEFAULT NULL,
-  `no_telephone` varchar(255) DEFAULT NULL,
+  `no_tlp` varchar(255) DEFAULT NULL,
   `title` varchar(255) DEFAULT NULL,
   `nama_tenant` varchar(255) DEFAULT NULL,
-  `perusahaan` varchar(255) DEFAULT NULL,
-  `penanggung_jawab` varchar(255) DEFAULT NULL,
+  `penerbit` varchar(255) DEFAULT NULL,
+  `pengarang` varchar(255) DEFAULT NULL,
   `thn_tenant` varchar(255) DEFAULT NULL,
   `isi` text DEFAULT NULL,
   `jml` int(11) DEFAULT NULL,
@@ -186,7 +186,7 @@ CREATE TABLE `tbl_tenant` (
 -- Dumping data for table `tbl_tenant`
 --
 
-INSERT INTO `tbl_tenant` (`id_tenant`, `tenant_id`, `id_kategori`, `id_lokasi`, `logo`, `no_telephone`, `title`, `nama_tenant`, `perusahaan`, `penanggung_jawab`, `thn_tenant`, `isi`, `jml`, `tgl_masuk`) VALUES
+INSERT INTO `tbl_tenant` (`id_tenant`, `tenant_id`, `id_kategori`, `id_lokasi`, `logo`, `no_tlp`, `title`, `nama_tenant`, `penerbit`, `pengarang`, `thn_tenant`, `isi`, `jml`, `tgl_masuk`) VALUES
 (8, 'BK008', 2, 1, '0', '132-123-234-231', '0', 'CARA MUDAH BELAJAR PEMROGRAMAN C++', 'INFORMATIKA BANDUNG', 'BUDI RAHARJO ', '2012', '<table class=\"table table-bordered\" style=\"background-color: rgb(255, 255, 255); width: 653px; color: rgb(51, 51, 51);\"><tbody><tr><td style=\"padding: 8px; line-height: 1.42857; border-color: rgb(244, 244, 244);\">Tipe Buku</td><td style=\"padding: 8px; line-height: 1.42857; border-color: rgb(244, 244, 244);\">Kertas</td></tr><tr><td style=\"padding: 8px; line-height: 1.42857; border-color: rgb(244, 244, 244);\">Bahasa</td><td style=\"padding: 8px; line-height: 1.42857; border-color: rgb(244, 244, 244);\">Indonesia</td></tr></tbody></table>', 23, '2019-11-23 11:49:57'),
 (9, 'T009', 4, 3, NULL, '13456', 'fgff', NULL, 'fhnhnf', 'fhnhfn', '2333', '', 3, '2022-06-22 21:01:44');
 

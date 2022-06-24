@@ -104,6 +104,11 @@ class Data extends CI_Controller {
 				unlink($logo);
 			}
 			
+			$lampiran = './assets/image/tenant/'.$tenant->lampiran;
+			if(file_exists($lampiran))
+			{
+				unlink($lampiran);
+			}
 			
 			$this->M_Admin->delete_table('tbl_tenant','id_tenant',$this->input->get('tenant_id'));
 			
@@ -122,11 +127,10 @@ class Data extends CI_Controller {
 				'tenant_id'=>$tenant_id,
 				'id_kategori'=>htmlentities($post['kategori']), 
 				'id_lokasi' => htmlentities($post['lokasi']), 
-				'no_telephone' => htmlentities($post['no_telephone']), 
+				'no_tlp' => htmlentities($post['no_tlp']), 
 				'title'  => htmlentities($post['title']), 
-				'penanggung_jawab'=> htmlentities($post['penanggung_jawab']), 
-				'nama_tenant'=> htmlentities($post['nama_tenant']),
-				'perusahaan'=> htmlentities($post['perusahaan']),    
+				'pengarang'=> htmlentities($post['pengarang']), 
+				'penerbit'=> htmlentities($post['penerbit']),    
 				'thn_tenant' => htmlentities($post['thn']), 
 				'isi' => $this->input->post('ket'), 
 				'jml'=> htmlentities($post['jml']),  
@@ -179,7 +183,7 @@ class Data extends CI_Controller {
 				}
 			}
 
-			$this->db->insert('tbl_tenant', $data);
+			$this->db->inser('tbl_tenant', $data);
 
 			$this->session->set_flashdata('pesan','<div id="notifikasi"><div class="alert alert-success">
 			<p> Tambah tenant Sukses !</p>
@@ -194,11 +198,10 @@ class Data extends CI_Controller {
 			$data = array(
 				'id_kategori'=>htmlentities($post['kategori']), 
 				'id_lokasi' => htmlentities($post['lokasi']), 
-				'no_telephone' => htmlentities($post['no_telephone']), 
+				'no_tlp' => htmlentities($post['no_tlp']), 
 				'title'  => htmlentities($post['title']),
-				'penanggung_jawab'=> htmlentities($post['penanggung_jawab']), 
-				'nama_tenant'=> htmlentities($post['nama_tenant']),
-				'perusahaan'=> htmlentities($post['perusahaan']),  
+				'pengarang'=> htmlentities($post['pengarang']), 
+				'penerbit'=> htmlentities($post['penerbit']),  
 				'thn_tenant' => htmlentities($post['thn']), 
 				'isi' => $this->input->post('ket'), 
 				'jml'=> htmlentities($post['jml']),  

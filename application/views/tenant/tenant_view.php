@@ -29,9 +29,9 @@
                             <tr>
                                 <th>No</th>
                                 <th>logo</th>
-                                <!-- <th>no_telephone</th> -->
+                                <!-- <th>no_tlp</th> -->
                                 <th>Nama Tenant</th>
-                                <th>Perusahaan</th>
+                                <th>Penerbit</th>
                                 <th>Tahun tenant</th>
                                 <th>Stok tenant</th>
                                 <th>Tanggal Masuk</th>
@@ -54,9 +54,9 @@
                                         <?php }?>
                                     </center>
                                 </td>
-                                <!-- <td><?= $isi['no_telephone'];?></td> -->
+                                <!-- <td><?= $isi['no_tlp'];?></td> -->
                                 <td><?= $isi['nama_tenant'];?></td>
-                                <td><?= $isi['perusahaan'];?></td>
+                                <td><?= $isi['penerbit'];?></td>
                                 <td><?= $isi['thn_tenant'];?></td>
                                 <td><?= $isi['jml'];?></td>
                                 <td><?= $isi['tgl_masuk'];?></td>

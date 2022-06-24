@@ -39,20 +39,20 @@
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label>no_tlp</label>
-                                    <input type="text" class="form-control" value="<?= $tenant->no_tlp;?>" name="no_tlp"  placeholder="Contoh no_tlp : 978-602-8123-35-8">
+                                    <label>no_telephone</label>
+                                    <input type="text" class="form-control" value="<?= $tenant->no_telephone;?>" name="no_telephone"  placeholder="Contoh no_telephone : 978-602-8123-35-8">
                                 </div>
                                 <div class="form-group">
                                     <label>Judul tenant</label>
                                     <input type="text" class="form-control" value="<?= $tenant->title;?>" name="title" placeholder="Contoh : Cara Cepat Belajar Pemrograman Web">
                                 </div>
                                 <div class="form-group">
-                                    <label>Nama Pengarang</label>
-                                    <input type="text" class="form-control" value="<?= $tenant->pengarang;?>" name="pengarang" placeholder="Nama Pengarang">
+                                    <label>Nama penanggung_jawab</label>
+                                    <input type="text" class="form-control" value="<?= $tenant->penanggung_jawab;?>" name="penanggung_jawab" placeholder="Nama penanggung_jawab">
                                 </div>
                                 <div class="form-group">
-                                    <label>Penerbit</label>
-                                    <input type="text" class="form-control" value="<?= $tenant->penerbit;?>" name="penerbit" placeholder="Nama Penerbit">
+                                    <label>perusahaan</label>
+                                    <input type="text" class="form-control" value="<?= $tenant->perusahaan;?>" name="perusahaan" placeholder="Nama perusahaan">
                                 </div>
                                 <div class="form-group">
                                     <label>Tahun tenant</label>

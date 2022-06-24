@@ -27,11 +27,15 @@
 			    <div class="box-body">
 					<table class="table table-striped table-bordered">
 						<tr>
-							<td style="width:20%">no_tlp</td>
-							<td><?= $tenant->no_tlp;?></td>
+							<td>Judul tenant</td>
+							<td><?= $tenant->nama_tenant;?></td>
 						</tr>
 						<tr>
-							<td>Logo tenant</td>
+							<td style="width:20%">No Telephone</td>
+							<td><?= $tenant->no_telephone;?></td>
+						</tr>
+						<tr>
+							<td>Logo Tenant</td>
 							<td><?php if(!empty($tenant->logo !== "0")){?>
 									<a href="<?= base_url('assets_style/image/tenant/'.$tenant->logo);?>" target="_blank">
 										<img src="<?= base_url('assets_style/image/tenant/'.$tenant->logo);?>" style="width:170px;height:170px;" class="img-responsive">
@@ -40,30 +44,26 @@
 								</td>
 						</tr>
 						<tr>
-							<td>Judul tenant</td>
-							<td><?= $tenant->nama_tenant;?></td>
-						</tr>
-						<tr>
 							<td>Kategori</td>
 							<td><?= $kat->nama_kategori;?></td>
 						</tr>
 						<tr>
-							<td>Penerbit</td>
-							<td><?= $tenant->penerbit;?></td>
+							<td>Perusahaan</td>
+							<td><?= $tenant->perusahaan;?></td>
 						</tr>
 						<tr>
-							<td>Pengarang</td>
-							<td><?= $tenant->pengarang;?></td>
+							<td>Penanggung Jawab</td>
+							<td><?= $tenant->penanggung_jawab;?></td>
 						</tr>
 						<tr>
-							<td>Tahun Terbit</td>
+							<td>Tahun Masuk</td>
 							<td><?= $tenant->thn_tenant;?></td>
 						</tr>
 						<tr>
 							<td>Jumlah tenant</td>
 							<td><?= $tenant->jml;?></td>
 						</tr>
-						<tr>
+						<!-- <tr>
 							<td>Jumlah Pinjam</td>
 							<td>
 								<?php
@@ -79,11 +79,24 @@
 								<a data-toggle="modal" data-target="#TableAnggota" class="btn btn-primary btn-xs" style="margin-left:1pc;">
 									<i class="fa fa-sign-in"></i> Detail Pinjam</a>
 							</td>
-						</tr>
+						</tr> -->
+						<!-- <tr>
+							<td>Keterangan Lainnya</td>
+							<td><?= $tenant->isi;?></td>
+						</tr> -->
 						<tr>
 							<td>Lokasi</td>
 							<td><?= $lokasi->nama_lokasi;?></td>
 						</tr>
+						<!-- <tr>
+							<td>Lampiran</td>
+							<td><?php if(!empty($tenant->lampiran !== "0")){?>
+									<a href="<?= base_url('assets_style/image/tenant/'.$tenant->lampiran);?>" class="btn btn-primary btn-md" target="_blank">
+										<i class="fa fa-download"></i> Sample tenant
+									</a>
+								<?php  }else{ echo '<br/><p style="color:red">* Tidak ada Lampiran</p>';}?>
+                               </td>
+						</tr> -->
 						<tr>
 							<td>Tanggal Masuk</td>
 							<td><?= $tenant->tgl_masuk;?></td>
@@ -112,8 +125,8 @@
 			<th>No</th>
 			<th>ID</th>
 			<th>Nama</th>
-			<th>Jenkel</th>
-			<th>Telepon</th>
+			<th>Gender</th>
+			<th>Telephone</th>
 			<th>Tgl Pinjam</th>
 			<th>Lama Pinjam</th>
 		</tr>

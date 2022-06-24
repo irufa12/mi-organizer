@@ -30,35 +30,30 @@
 									</select>
 								</div>
                                 <div class="form-group">
-                                    <label>lokasi / Lokasi</label>
+                                    <label>Lokasi</label>
                                     <select name="lokasi" class="form-control select2" required="required">
-										<option disabled selected value> -- Pilih lokasi / Lokasi -- </option>
+										<option disabled selected value> -- Pilih Lokasi -- </option>
 										<?php foreach($lokasitenant as $isi){?>
 											<option value="<?= $isi['id_lokasi'];?>" <?php if($isi['id_lokasi'] == $tenant->id_lokasi){ echo 'selected';}?>><?= $isi['nama_lokasi'];?></option>
 										<?php }?>
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label>no_telephone</label>
+                                    <label>No Telephone</label>
                                     <input type="text" class="form-control" value="<?= $tenant->no_telephone;?>" name="no_telephone"  placeholder="Contoh no_telephone : 978-602-8123-35-8">
                                 </div>
                                 <div class="form-group">
-                                    <label>Judul tenant</label>
-                                    <input type="text" class="form-control" value="<?= $tenant->title;?>" name="title" placeholder="Contoh : Cara Cepat Belajar Pemrograman Web">
+                                    <label>Nama Tenant</label>
+                                    <input type="text" class="form-control" value="<?= $tenant->nama_tenant;?>" name="nama_tenant" placeholder="Contoh : Cara Cepat Belajar Pemrograman Web">
                                 </div>
                                 <div class="form-group">
-                                    <label>Nama penanggung_jawab</label>
+                                    <label>Nama Penanggung Jawab</label>
                                     <input type="text" class="form-control" value="<?= $tenant->penanggung_jawab;?>" name="penanggung_jawab" placeholder="Nama penanggung_jawab">
                                 </div>
                                 <div class="form-group">
-                                    <label>perusahaan</label>
+                                    <label>Perusahaan</label>
                                     <input type="text" class="form-control" value="<?= $tenant->perusahaan;?>" name="perusahaan" placeholder="Nama perusahaan">
                                 </div>
-                                <div class="form-group">
-                                    <label>Tahun tenant</label>
-                                    <input type="number" class="form-control" value="<?= $tenant->thn_tenant;?>" name="thn" placeholder="Tahun tenant : 2019">
-                                </div>
-								
                             </div>
                             <div class="col-sm-6">
 								
@@ -77,25 +72,10 @@
 									</a>
 									<?php }else{ echo '<br/><p style="color:red">* Tidak ada logo</p>';}?>
 								</div>
-                                <div class="form-group">
-								<label>Lampiran tenant <small style="color:green">(pdf) * ganti opsional</small></label>
-                                    <input type="file" accept="application/pdf" name="lampiran">
-                                    <br>
-									<?php if(!empty($tenant->lampiran !== "0")){?>
-									<a href="<?= base_url('assets_style/image/tenant/'.$tenant->lampiran);?>" class="btn btn-primary btn-md" target="_blank">
-										<i class="fa fa-download"></i> Sample tenant
-									</a>
-									<?php  }else{ echo '<br/><p style="color:red">* Tidak ada Lampiran</p>';}?>
-                                </div>
-                                <div class="form-group">
-                                    <label>Keterangan Lainnya</label>
-                                    <textarea class="form-control" name="ket" id="summernotehal" style="height:120px"><?= $tenant->isi;?></textarea>
-                                </div>
                             </div>
                         </div>
                         <div class="pull-right">
 							<input type="hidden" name="gmbr" value="<?= $tenant->logo;?>">
-							<input type="hidden" name="lamp" value="<?= $tenant->lampiran;?>">
 							<input type="hidden" name="edit" value="<?= $tenant->id_tenant;?>">
                             <button type="submit" class="btn btn-primary btn-md">Submit</button> 
                     </form>

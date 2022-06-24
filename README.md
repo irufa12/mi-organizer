@@ -6,7 +6,7 @@
 
 ## Penggunaan Login Akses
 
-<b>Petugas : </b>
+<b>pic : </b>
 <br/>
 Username : irhash
 <br/>

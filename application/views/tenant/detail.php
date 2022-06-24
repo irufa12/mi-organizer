@@ -56,47 +56,13 @@
 							<td><?= $tenant->penanggung_jawab;?></td>
 						</tr>
 						<tr>
-							<td>Tahun Masuk</td>
-							<td><?= $tenant->thn_tenant;?></td>
-						</tr>
-						<tr>
 							<td>Jumlah tenant</td>
 							<td><?= $tenant->jml;?></td>
 						</tr>
-						<!-- <tr>
-							<td>Jumlah Pinjam</td>
-							<td>
-								<?php
-									$id = $tenant->tenant_id;
-									$dd = $this->db->query("SELECT * FROM tbl_pinjam WHERE tenant_id= '$id' AND status = 'Dipinjam'");
-									if($dd->num_rows() > 0 )
-									{
-										echo $dd->num_rows();
-									}else{
-										echo '0';
-									}
-								?> 
-								<a data-toggle="modal" data-target="#TableAnggota" class="btn btn-primary btn-xs" style="margin-left:1pc;">
-									<i class="fa fa-sign-in"></i> Detail Pinjam</a>
-							</td>
-						</tr> -->
-						<!-- <tr>
-							<td>Keterangan Lainnya</td>
-							<td><?= $tenant->isi;?></td>
-						</tr> -->
 						<tr>
 							<td>Lokasi</td>
 							<td><?= $lokasi->nama_lokasi;?></td>
 						</tr>
-						<!-- <tr>
-							<td>Lampiran</td>
-							<td><?php if(!empty($tenant->lampiran !== "0")){?>
-									<a href="<?= base_url('assets_style/image/tenant/'.$tenant->lampiran);?>" class="btn btn-primary btn-md" target="_blank">
-										<i class="fa fa-download"></i> Sample tenant
-									</a>
-								<?php  }else{ echo '<br/><p style="color:red">* Tidak ada Lampiran</p>';}?>
-                               </td>
-						</tr> -->
 						<tr>
 							<td>Tanggal Masuk</td>
 							<td><?= $tenant->tgl_masuk;?></td>
@@ -119,39 +85,16 @@
 <h4 class="modal-title"> Anggota Yang Sedang Pinjam</h4>
 </div>
 <div id="modal_body" class="modal-body fileSelection1">
-<table id="example1" class="table table-bordered table-striped">
-	<thead>
-		<tr>
-			<th>No</th>
-			<th>ID</th>
-			<th>Nama</th>
-			<th>Gender</th>
-			<th>Telephone</th>
-			<th>Tgl Pinjam</th>
-			<th>Lama Pinjam</th>
-		</tr>
-	</thead>
-	<tbody>
-	<?php 
-	$no = 1;
-	$tenantid = $tenant->tenant_id;
-	$pin = $this->db->query("SELECT * FROM tbl_pinjam WHERE tenant_id ='$tenantid' AND status = 'Dipinjam'")->result_array();
-	foreach($pin as $si)
-	{
-		$isi = $this->M_Admin->get_tableid_edit('tbl_login','anggota_id',$si['anggota_id']);
-		if($isi->level == 'Anggota'){
-		?>
-		<tr>
-			<td><?= $no;?></td>
-			<td><?= $isi->anggota_id;?></td>
-			<td><?= $isi->nama;?></td>
-			<td><?= $isi->jenkel;?></td>
-			<td><?= $isi->telepon;?></td>
-			<td><?= $si['tgl_pinjam'];?></td>
-			<td><?= $si['lama_pinjam'];?> Hari</td>
-		</tr>
-	<?php $no++;}}?>
-	</tbody>
+	<table id="example1" class="table table-bordered table-striped">
+		<thead>
+			<tr>
+				<th>No</th>
+				<th>ID</th>
+				<th>Nama</th>
+				<th>Jenis Kelamin</th>
+				<th>Telephone</th>
+			</tr>
+		</thead>
 	</table>
 </div>
 <div class="modal-footer">

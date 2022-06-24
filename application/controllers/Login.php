@@ -27,7 +27,7 @@ class Login extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->data['title_web'] = 'Login | Sistem Informasi Perpustakaan';
+		$this->data['title_web'] = 'Login | Sistem Informasi Jakarta Expo';
 		$this->load->view('login_view',$this->data);
 	}
 

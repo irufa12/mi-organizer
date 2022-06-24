@@ -41,7 +41,7 @@
 							<form method="post" action="<?= base_url('data/katproses');?>">
 								<div class="form-group">
 								<label for="">Nama Kategori</label>
-								<input type="text" name="kategori" id="kategori" class="form-control" placeholder="Contoh : Pemrograman Web" >
+								<input type="text" name="kategori" id="kategori" class="form-control" placeholder="Contoh : Fashion" >
 								
 								</div>
 								<br/>

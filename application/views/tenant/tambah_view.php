@@ -54,10 +54,6 @@
                                     <label>Perusahaan</label>
                                     <input type="text" class="form-control" name="perusahaan" placeholder="Nama Perusahaan">
                                 </div>
-                                <div class="form-group">
-                                    <label>Tahun tenant</label>
-                                    <input type="number" class="form-control" name="thn" placeholder="Tahun tenant : 2019">
-                                </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">

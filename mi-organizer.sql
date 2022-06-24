@@ -111,8 +111,8 @@ CREATE TABLE `tbl_login` (
 --
 
 INSERT INTO `tbl_login` (`id_login`, `anggota_id`, `user`, `pass`, `level`, `nama`, `tempat_lahir`, `tgl_lahir`, `jenkel`, `alamat`, `telepon`, `email`, `tgl_bergabung`, `foto`) VALUES
-(4, 'AG003', 'irhash', '3b607996d6f72bf43c3001a9024e1272', 'Petugas', 'irhash', 'Bekasi', '1999-07-02', 'Laki-Laki', 'Vila Nusa Indah', '08833354642', 'muhammadirhash76@gmail.com', '2022-06-20', 'user_1655734004.JPG'),
-(5, 'AG005', 'fadhil.arf', '011ed3efca1c7928ecc5635be1023dda', 'Petugas', 'Fadhil Arif', 'Jakarta', '1998-04-10', 'Laki-Laki', 'pondok benda 12 ', '08231230098', 'fadhil.arief04@gmail.com', '2022-06-22', 'user_1655901541.JPG');
+(4, 'AG003', 'irhash', '3b607996d6f72bf43c3001a9024e1272', 'pic', 'irhash', 'Bekasi', '1999-07-02', 'Laki-Laki', 'Vila Nusa Indah', '08833354642', 'muhammadirhash76@gmail.com', '2022-06-20', 'user_1655734004.JPG'),
+(5, 'AG005', 'fadhil.arf', '011ed3efca1c7928ecc5635be1023dda', 'pic', 'Fadhil Arif', 'Jakarta', '1998-04-10', 'Laki-Laki', 'pondok benda 12 ', '08231230098', 'fadhil.arief04@gmail.com', '2022-06-22', 'user_1655901541.JPG');
 
 -- --------------------------------------------------------
 
@@ -136,30 +136,30 @@ INSERT INTO `tbl_lokasi` (`id_lokasi`, `nama_lokasi`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_pinjam`
---
+-- -- Table structure for table ``
+-- --
 
-CREATE TABLE `tbl_pinjam` (
-  `id_pinjam` int(11) NOT NULL,
-  `pinjam_id` varchar(255) NOT NULL,
-  `anggota_id` varchar(255) NOT NULL,
-  `tenant_id` varchar(255) NOT NULL,
-  `status` varchar(255) NOT NULL,
-  `tgl_pinjam` varchar(255) NOT NULL,
-  `lama_pinjam` int(11) NOT NULL,
-  `tgl_balik` varchar(255) NOT NULL,
-  `tgl_kembali` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+-- CREATE TABLE `` (
+--   `id_pinjam` int(11) NOT NULL,
+--   `pinjam_id` varchar(255) NOT NULL,
+--   `anggota_id` varchar(255) NOT NULL,
+--   `tenant_id` varchar(255) NOT NULL,
+--   `status` varchar(255) NOT NULL,
+--   `tgl_pinjam` varchar(255) NOT NULL,
+--   `lama_pinjam` int(11) NOT NULL,
+--   `tgl_balik` varchar(255) NOT NULL,
+--   `tgl_kembali` varchar(255) DEFAULT NULL
+-- ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `tbl_pinjam`
---
+-- --
+-- -- Dumping data for table ``
+-- --
 
-INSERT INTO `tbl_pinjam` (`id_pinjam`, `pinjam_id`, `anggota_id`, `tenant_id`, `status`, `tgl_pinjam`, `lama_pinjam`, `tgl_balik`, `tgl_kembali`) VALUES
-(8, 'PJ001', 'AG002', 'BK008', 'Di Kembalikan', '2020-05-19', 1, '2020-05-20', '2020-05-20'),
-(10, 'PJ009', 'AG002', 'BK008', 'Di Kembalikan', '2020-05-20', 1, '2020-05-21', '2020-05-20');
+-- INSERT INTO `` (`id_pinjam`, `pinjam_id`, `anggota_id`, `tenant_id`, `status`, `tgl_pinjam`, `lama_pinjam`, `tgl_balik`, `tgl_kembali`) VALUES
+-- (8, 'PJ001', 'AG002', 'BK008', 'Di Kembalikan', '2020-05-19', 1, '2020-05-20', '2020-05-20'),
+-- (10, 'PJ009', 'AG002', 'BK008', 'Di Kembalikan', '2020-05-20', 1, '2020-05-21', '2020-05-20');
 
--- --------------------------------------------------------
+-- -- --------------------------------------------------------
 
 --
 -- Table structure for table `tbl_tenant`
@@ -225,9 +225,9 @@ ALTER TABLE `tbl_lokasi`
   ADD PRIMARY KEY (`id_lokasi`);
 
 --
--- Indexes for table `tbl_pinjam`
+-- Indexes for table ``
 --
-ALTER TABLE `tbl_pinjam`
+ALTER TABLE ``
   ADD PRIMARY KEY (`id_pinjam`);
 
 --
@@ -271,9 +271,9 @@ ALTER TABLE `tbl_lokasi`
   MODIFY `id_lokasi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `tbl_pinjam`
+-- AUTO_INCREMENT for table ``
 --
-ALTER TABLE `tbl_pinjam`
+ALTER TABLE ``
   MODIFY `id_pinjam` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --

@@ -31,9 +31,8 @@
                                 <th>Logo</th>
                                 <th>No Telephone</th>
                                 <th>Nama Tenant</th>
-                                <th>perusahaan</th>
-                                <th>Tahun tenant</th>
-                                <th>Stok tenant</th>
+                                <th>Perusahaan</th>
+                                <th>Jumlah Tenant</th>
                                 <th>Tanggal Masuk</th>
                                 <th>Aksi</th>
                             </tr>
@@ -57,7 +56,6 @@
                                 <td><?= $isi['no_telephone'];?></td>
                                 <td><?= $isi['nama_tenant'];?></td>
                                 <td><?= $isi['perusahaan'];?></td>
-                                <td><?= $isi['thn_tenant'];?></td>
                                 <td><?= $isi['jml'];?></td>
                                 <td><?= $isi['tgl_masuk'];?></td>
 									<td <?php if($this->session->userdata('level') == 'Petugas'){?>style="width:17%;"<?php }?>>

@@ -43,7 +43,7 @@
     </style>
   </head>
 <body class="hold-transition login-page" style="overflow-y: hidden;background:url(
-	'<?php echo base_url('assets_style/image/tenant-2.jpg');?>')no-repeat;background-size:100%;">
+	'<?php echo base_url('assets_style/image/wallpaper.jpg');?>')no-repeat;background-size:100%;">
 <div class="login-box">
 	<br/>
   <div class="login-logo">

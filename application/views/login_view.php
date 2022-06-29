@@ -64,13 +64,6 @@
       </div>
       <div class="row">
         <div class="col-xs-8">
-        <!-- /.col
-          <div class="checkbox icheck">
-            <label>
-              <input type="checkbox" name="remember" id="remember" value="R1"> Remember Me
-            </label>
-          </div>-->
-          <!-- /.social-auth-links -->
         </div>
         <div class="col-xs-4">
           <button type="submit" id="loding" class="btn btn-primary btn-block btn-flat">Sign In</button>

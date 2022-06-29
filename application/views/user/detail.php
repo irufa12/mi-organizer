@@ -82,7 +82,7 @@ error_reporting(0);
         <div class="container">
             <br/> 
             <div class="pull-left">
-                Codekop - Preview HTML to DOC [ size paper A4 ]
+                MI Organizer - Preview HTML to DOC [ size paper A4 ]
             </div>
             <div class="pull-right"> 
             <button type="button" class="btn btn-success btn-md" onclick="printDiv('printableArea')">
@@ -95,7 +95,7 @@ error_reporting(0);
             <page size="A4">
 				<div class="panel panel-default">
 					<div class="panel-body bg-primary">
-						<h4 class="text-center">KARTU ANGGOTA PERPUSTAKAAN</h4>
+						<h4 class="text-center">KARTU ANGGOTA</h4>
 						<br/>
 						<div class="row">
 							<div class="col-sm-8">

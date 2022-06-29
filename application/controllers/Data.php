@@ -131,8 +131,6 @@ class Data extends CI_Controller {
 				'nama_tenant'  => htmlentities($post['nama_tenant']), 
 				'penanggung_jawab'=> htmlentities($post['penanggung_jawab']), 
 				'perusahaan'=> htmlentities($post['perusahaan']),    
-				'thn_tenant' => htmlentities($post['thn']), 
-				'isi' => $this->input->post('ket'), 
 				'jml'=> htmlentities($post['jml']),  
 				'tgl_masuk' => date('Y-m-d H:i:s')
 			);
